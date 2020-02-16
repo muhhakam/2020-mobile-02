@@ -6,17 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class profile extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_profile);
     }
 
-    public void clickLogin(View view) {
-        Intent i = new Intent(MainActivity.this, formlogin.class);
+    public void back(View view) {
+        Intent i = new Intent(profile.this, formlogin.class);
         startActivity(i);
     }
-
 }
